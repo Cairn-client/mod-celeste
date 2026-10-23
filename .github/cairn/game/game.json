@@ -1,0 +1,46 @@
+{
+  "schema": 1,
+  "id": "celeste",
+  "name": "Celeste",
+  "developer": "Maddy Makes Games",
+  "franchise": "Celeste",
+  "steamAppId": 504230,
+  "exe": "Celeste.exe",
+  "description": "Climb the mountain with company. CelesteNet adds online play to Celeste through the Everest mod loader: you see other players on the same map, can chat with them, and meet them in the lobbies of a CelesteNet server.",
+  "accent": "#C35A8B",
+  "images": {
+    "background": "celeste.jpg",
+    "logo": "celeste-logo.png",
+    "hero": "celeste-hero.jpg",
+    "poster": "celeste-poster.jpg",
+    "screenshots": [ "celeste-shot-1.jpg", "celeste-shot-2.jpg" ]
+  },
+  "ownSession": true,
+  "setup": [
+    { "kind": "steam-running" },
+    { "kind": "steam-app", "appId": 504230, "title": "Celeste", "detail": "Install Celeste from your Steam library." },
+    { "kind": "game-found" },
+    { "kind": "game-file", "path": "Celeste.Mod.mm.dll", "title": "Everest installed", "detail": "Install the Everest mod loader once with Olympus (everestapi.github.io), then come back here.", "optional": true },
+    { "kind": "mod-installed", "detail": "Download the mod above: Cairn puts it in the game's Mods folder." }
+  ],
+  "hostSteps": [
+    "Install the Everest mod loader once with Olympus (it is a free, separate tool). Cairn does not change the game's own files.",
+    "Download the mod above. Cairn puts it in the game's Mods folder and keeps it up to date.",
+    "Press Play and open CelesteNet from the main menu. Connect to the public CelesteNet server, or to your own: run the CelesteNet server and share its address."
+  ],
+  "joinSteps": [
+    "Install the Everest mod loader once with Olympus, then download the mod above.",
+    "Press Play and open CelesteNet from the main menu.",
+    "Connect to the same server as your friends: you see each other on the same map."
+  ],
+  "features": [
+    { "title": "Sessions", "items": [
+      { "name": "Connect to a server", "detail": "Players meet on a CelesteNet server: the public one or a server you run yourself. Everyone needs the same version of the mod.", "status": "inTest" },
+      { "name": "Kept up to date", "detail": "Cairn installs the mod in the game's Mods folder and updates it when a new version is released." }
+    ] },
+    { "title": "Players", "items": [
+      { "name": "Other players", "detail": "Players on the same map are shown as ghosts, with their names.", "status": "inTest" },
+      { "name": "Chat", "detail": "Text chat between the players of a server.", "status": "inTest" }
+    ] }
+  ]
+}
