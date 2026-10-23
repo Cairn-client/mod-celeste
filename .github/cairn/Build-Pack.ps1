@@ -36,7 +36,7 @@ if (Test-Path $stage) { Remove-Item $stage -Recurse -Force }
 $mod = Join-Path $stage 'mod'
 New-Item -ItemType Directory -Force -Path $mod | Out-Null
 
-foreach ( in 'everest.yaml', 'CelesteNet.Client.dll') {
+foreach ($need in 'everest.yaml', 'CelesteNet.Client.dll') {
     if (-not (Test-Path (Join-Path $SourceDir $need))) { throw "the upstream release has no $need" }
 }
 Copy-Item (Join-Path $SourceDir '*') $mod -Recurse
