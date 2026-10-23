@@ -1,30 +1,21 @@
-# CelesteNet
+# CelesteNet on Cairn
 
-[discord-celestenet]: https://discord.gg/celeste "Join #celestenet on the 'Mt. Celeste Climbing Association' Discord server"
-[celeste-game]: https://www.celestegame.com/ "Official Celeste website"
-[everest-site]: https://everestapi.github.io/ "Everest mod loader website"
-[celestenet-download]: https://gamebanana.com/gamefiles/12267 "CelesteNet Download (GameBanana)"
+A fork of [0x0ade/CelesteNet](https://github.com/0x0ade/CelesteNet), the online multiplayer mod for **Celeste**, made to run on the [Cairn launcher](https://github.com/Cairn-client/launcher).
 
-[![discord](https://img.shields.io/discord/403698615446536203.svg?color=7289da&logo=discord&logoColor=ffffff)][discord-celestenet]
-[![Latest Version](https://img.shields.io/github/tag/0x0ade/Celestenet.svg?label=version)][celestenet-download]
-[![License](https://img.shields.io/github/license/0x0ade/Celestenet.svg)](LICENSE)
+## What we changed
 
-(we're in `#celestenet` on the "Mt. Celeste Climbing Association" Discord server)
+- A Cairn pack: the mod's client release is published as a pack the launcher installs in the game's Mods folder and updates.
 
-## What is CelesteNet?
+The mod's own code and credits are its authors'. Everything else is as upstream; see [UPSTREAM.md](UPSTREAM.md) for the version this fork is based on and the release the pack carries.
 
-[![CelesteNet Website](CelesteNet.Server.FrontendModule/Content/website_button.png)](https://celestenet.0x0a.de/) [![CelesteNet Download](CelesteNet.Server.FrontendModule/Content/download_button.png)][celestenet-download]
+## Play it
 
-CelesteNet is an online multiplayer mod for [Celeste][celeste-game], using the [Everest mod loader][everest-site], made with a lot of love.
-It lets you join levels together with your friends or complete strangers, even jumping on others' heads and throwing them across pits if you want to! There even are some multiplayer-exclusive maps and custom game modes for you to experience already, and more in development by the community.
+1. Install [Cairn](https://github.com/Cairn-client/launcher/releases/latest).
+2. Install the [Everest](https://everestapi.github.io/) mod loader once with Olympus: it patches the game's executable, which Cairn never does.
+3. Open Celeste in the Library, download the mod and press Play.
 
-## How do I play on CelesteNet?
+Each release of this repository is the pack the launcher downloads.
 
-First, make sure that you've installed [Everest (mod loader) via Olympus (mod manager)][everest-site].
-Click on the "Download CelesteNet" button above, then click the "1-CLICK INSTALL" button on the latest version.
+## Licence
 
----
-
-#### License notice
-
-The CelesteNet.Server.FrontendModule project/module uses [ImageSharp](https://github.com/SixLabors/ImageSharp/) under Apache 2.0 license terms per [Six Labors Split License 1.0](https://github.com/SixLabors/ImageSharp/blob/main/LICENSE)
+MIT, as upstream. Celeste belongs to Maddy Makes Games; this project is unofficial and not affiliated with or endorsed by them.
